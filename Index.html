@@ -10,25 +10,33 @@
 </head>
   <body>
     <header>
-      <h1><strong>Password Generator</strong></h1>
+      <h1><strong>PASSWORD GENERATOR</strong></h1>
 
-<div class="container">
+    <div class="container">
 
-    <div> class="row">
+        <div class="row"> 
 
-        <div class="content"></div>
+            <div class="col">
 
-            <h2>Generate a Password</h2>
-            <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-    ></textarea>
+                <div class="content"></div>
 
-    <button onclick="generate()">Generate Password</button>
-    <button onclick="copy()">Copy to Clipboard</button>
-    <div id="length"></div>
+                    <h2>Generate a Password</h2>
+                    <br/>
+                    <textarea
+                    readonly
+                    id="password"
+                    placeholder="Your Secure Password"
+                    aria-label="Generated Password"
+                    ></textarea>
+                    <br/>
+                    input type="range" min="8" max="128" name="dropdown" id=
+                    dropdown">
+                    <br/>
+                    <button onclick="generate()">Generate Password</button>
+                    <button onclick="copy()">Copy to Clipboard</button>
+                    <div id="length"></div>
+                </div>
+
     
   </body>
 </html>
