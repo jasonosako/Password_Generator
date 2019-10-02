@@ -5,6 +5,16 @@ function generate() {
     console.log(security);
     let values ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+,-./:;<=>?@[]\^_`{\}~";
 
+    if (characters < 8) {
+        alert("Password length must be at least 8 characters");
+        return;
+      }
+
+      if (characters > 128) {
+        alert("Password length must less than 129 characters");
+        return;
+      }
+
     let password = "";
 
     for(var i = 0; i <=security; i++) {
@@ -15,9 +25,9 @@ function generate() {
 
 }
 
-function copyPassword() {
+function copy() {
 
-    document.getElementById("display").querySelector();
+    document.getElementById("display").select();
 
     document.execCommand("copy");
 
